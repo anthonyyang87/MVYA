@@ -1,0 +1,1 @@
+import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';

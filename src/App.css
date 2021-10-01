@@ -1,3 +1,8 @@
+.navigation {
+  background-color: #282c34;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -24,6 +29,7 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +41,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App-about-container {
+  max-width: 750px;
+}
+
+.App-categories-filter-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App-list-item {
+  max-width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
