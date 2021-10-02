@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Welcome to MVYA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Greetings everyone! Here we are creating an app that would be just like Yelp, but for merchandises instead. No more wasting time surfing online reading reviews from different websites (Many websites are paid to write good/bad reviews for products).
 
-## Available Scripts
+This would be an all-in-one app that would allow consumers to read and write reviews for a variety of products. Literally for any merchandise. The ultimate goal is to collect as much real user-experience reviews to create an unbiased ranking of "the best" products out there.
 
-In the project directory, you can run:
+## Installing Requirements and Creating a Simple Node Server
 
-### `npm start`
+First download the repo by running:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`git clone https://github.com/anthonyyang87/MVYA-web.git`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If you haven't already, install [Node.js](https://nodejs.dev/download/), [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), along with the required dependencies. Then create a simple node server.
 
-### `npm test`
+A simple node server looks this:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+const express = require("express");
 
-### `npm run build`
+const PORT = process.env.PORT || 3001;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+const app = express();
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+app.get("/api", (req, res) => {
+  res.json({
+    message: "Hello from server!"
+  });
+});
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
+});
+```
 
-### `npm run eject`
+Learn more about [Node.js](https://nodejs.dev/learn) and [npm](https://docs.npmjs.com/about-npm)!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Running Server and Client
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To test code changes/features, navigate to your server directory and run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Then navigate to your client directory and run:
 
-## Learn More
+`npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Happy coding!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To contribute, please fork the repo and submit a pull request.
