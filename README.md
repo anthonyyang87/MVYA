@@ -4,7 +4,7 @@ Greetings everyone! Here we are creating an app that would be just like Yelp, bu
 
 This would be an all-in-one app that would allow consumers to read and write reviews for a variety of products. Literally for any merchandise. The ultimate goal is to collect as much real user-experience reviews to create an unbiased ranking of "the best" products out there.
 
-## A Open Source Web Client
+## An Open Source Web Client
 
 We believe that there is no better way to design a beautiful interface and features than to welcome all developers to add their taste to the design. There is no perfect way to tailor it; but through blending a bit of spice from here and there, we believe that we can create a interface that would be favored and accepted by the majority. Hopefully!
 
